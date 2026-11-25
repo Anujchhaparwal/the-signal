@@ -1,0 +1,388 @@
+/* BRAIN EXPERIENCE */
+
+.brain-visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.brain-stage {
+  width: min(100%, 1100px);
+  min-height: 500px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brain-image {
+  display: block;
+  width: 620px;
+  max-width: 65%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: brightness(0.80) saturate(0.90);
+  transition: filter 0.4s ease;
+}
+
+/* INTERACTIVE REGIONS */
+
+.brain-region {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(85, 230, 176, 0.8);
+  border-radius: 50%;
+  background: rgba(9, 21, 34, 0.85);
+  color: #55E6B0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 14px rgba(85, 230, 176, 0.2);
+  transition: background 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 3;
+}
+
+.brain-region span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.brain-region:hover,
+.brain-region.is-active {
+  background: #55E6B0;
+  color: #091522;
+  transform: scale(1.12);
+  box-shadow: 0 0 22px rgba(85, 230, 176, 0.5);
+}
+
+.brain-region:focus-visible {
+  outline: 2px solid #6366F1;
+  outline-offset: 4px;
+}
+
+/* HOTSPOT POSITIONS */
+
+.region-clarity {
+  top: 25%;
+  left: 24%;
+}
+
+.region-connection {
+  top: 25%;
+  left: 68%;
+}
+
+.region-perspective {
+  top: 65%;
+  left: 24%;
+}
+
+.region-simplicity {
+  top: 58%;
+  left: 56%;
+}
+
+/* INFORMATION PANELS */
+
+.brain-information {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+
+  width: min(280px, 28%);
+  min-height: 125px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+
+.brain-info-content {
+  animation: info-appear 0.45s ease both;
+}
+
+.info-clarity {
+  top: 12%;
+  left: 0;
+  text-align: left;
+}
+
+.info-connection {
+  top: 12%;
+  right: 0;
+  text-align: right;
+}
+
+.info-perspective {
+  bottom: 10%;
+  left: 0;
+  text-align: left;
+}
+
+.info-simplicity {
+  bottom: 10%;
+  right: 0;
+  text-align: right;
+}
+
+.info-default {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.brain-info-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #55E6B0;
+}
+
+.brain-information h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 3vw, 29px);
+  font-weight: 400;
+  margin: 10px 0;
+  color: #F1F0E9;
+}
+
+.brain-information p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #A8B0BD;
+  max-width: 420px;
+  margin: 0;
+}
+
+.brain-instruction {
+  display: inline-block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  color: #A8B0BD;
+}
+
+.brain-graphic {
+  position: relative;
+  width: 620px;
+  max-width: 65%;
+  flex-shrink: 0;
+}
+
+.brain-graphic .brain-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.brain-graphic .neural-overlay {
+  width: 100%;
+}
+
+@keyframes info-appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 680px) {
+  .brain-stage {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .brain-graphic {
+    width: min(100%, 440px);
+    max-width: 100%;
+  }
+
+  .brain-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .neural-overlay {
+    width: 100%;
+  }
+
+  .brain-region {
+    width: 32px;
+    height: 32px;
+  }
+
+  .region-clarity {
+    top: 25%;
+    left: 27%;
+  }
+
+  .region-connection {
+    top: 25%;
+    left: 63%;
+  }
+
+  .region-perspective {
+    top: 58%;
+    left: 27%;
+  }
+
+  .region-simplicity {
+    top: 56%;
+    left: 55%;
+  }
+
+  .brain-information {
+    position: relative;
+    inset: auto;
+    transform: none;
+    order: 2;
+    width: 100%;
+    max-width: 440px;
+    min-height: 150px;
+    padding: 15px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .brain-information h3 {
+    font-size: 23px;
+    margin: 10px 0;
+  }
+
+  .brain-information p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .brain-instruction {
+    text-align: center;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .brain-region {
+    transition: none;
+  }
+
+  .brain-information {
+    animation: none;
+  }
+
+  .brain-info-content {
+    animation: none;
+  }
+}
+
+
+
+/* ANIMATED NEURAL NETWORK */
+
+.neural-overlay {
+  position: absolute;
+  width: min(620px, 65%);
+  aspect-ratio: 620 / 413;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.signal-pathways path {
+  fill: none;
+  stroke: #55E6FF;
+  stroke-width: 1.2;
+  stroke-dasharray: 4 9;
+  opacity: 0.25;
+  animation: signal-flow 9s linear infinite;
+}
+
+.travelling-signals circle {
+  fill: #FFFFFF;
+  opacity: 0.9;
+}
+
+.signal-pulses circle {
+  fill: #55E6FF;
+  filter: url(#signal-glow);
+  animation: signal-pulse 2.8s ease-in-out infinite alternate;
+}
+
+.neural-overlay.is-active .signal-pathways path {
+  opacity: 0.7;
+  stroke-width: 1.7;
+}
+
+.neural-overlay.is-active .travelling-signals circle {
+  fill: #FFFFFF;
+  opacity: 1;
+}
+
+@keyframes signal-flow {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes signal-pulse {
+  from {
+    opacity: 0.3;
+    r: 3;
+  }
+
+  to {
+    opacity: 1;
+    r: 7;
+  }
+}
+
+@media (max-width: 680px) {
+  .neural-overlay {
+    width: min(100%, 440px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .signal-pathways path,
+  .signal-pulses circle {
+    animation: none;
+  }
+
+  .travelling-signals {
+    display: none;
+  }
+}

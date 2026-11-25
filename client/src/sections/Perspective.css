@@ -1,0 +1,102 @@
+
+/* PAGE 02 — THE PERSPECTIVE */
+
+.perspective-section {
+  min-height: 100vh;
+  padding: 90px 10% 75px;
+  background: #080B12;
+  color: #F1F0E9;
+  position: relative;
+  overflow: hidden;
+}
+
+.perspective-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.perspective-heading {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #55E6B0;
+  margin-bottom: 24px;
+}
+
+.perspective-heading h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(38px, 5.5vw, 68px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 0;
+  color: #F1F0E9;
+}
+
+.perspective-heading h2 em {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #6366F1;
+}
+
+.perspective-heading p {
+  max-width: 580px;
+  margin: 24px auto 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #A8B0BD;
+}
+
+/* BRAIN VISUAL — RESERVED SPACE */
+
+.brain-experience {
+  width: 100%;
+  min-height: 480px;
+  margin: 45px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CLOSING LINE */
+
+.perspective-closing {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-style: italic;
+  color: #F1F0E9;
+  margin: 10px 0 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 680px) {
+  .perspective-section {
+    padding: 110px 7%;
+  }
+
+  .perspective-heading h2 {
+    letter-spacing: -1px;
+  }
+
+  .perspective-heading p {
+    font-size: 14px;
+  }
+
+  .brain-experience {
+    min-height: 350px;
+    margin: 30px auto 15px;
+  }
+}

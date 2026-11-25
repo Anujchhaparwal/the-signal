@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Perspective from "./sections/Perspective";
 import Journey from "./sections/Journey";
 import Impact from "./sections/Impact";
+import Contact from "./sections/Contact";
 
 
 function App() {
@@ -19,9 +20,7 @@ function App() {
 
         <Impact />
 
-        <section id="contact" className="placeholder-section">
-          <h2>05 — The Connection</h2>
-        </section>
+        <Contact />
       </main>
     </>
   );

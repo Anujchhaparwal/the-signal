@@ -13,7 +13,7 @@ const nodes = [
     eyebrow: "THE POWER OF PERCEPTION",
     title: "A brand is more than what people see.",
     description:
-      "Sonia connects brand identity with business outcomes, understanding how positioning and messaging influence perception, revenue and conversion.",
+      "I connect brand identity with business outcomes, understanding how positioning and messaging influence perception, revenue and conversion.",
     keywords: ["Brand strategy", "Messaging", "Positioning"],
     visual: "brand-visual",
     connections: ["people", "ideas"],
@@ -26,7 +26,7 @@ const nodes = [
     eyebrow: "THE HUMAN CONNECTION",
     title: "Understand people. Align everything.",
     description:
-      "Her approach starts with understanding how people think, communicate and work together, helping teams move forward with clarity and confidence.",
+      "I start by understanding how people think, communicate and work together, helping teams move forward with clarity and confidence.",
     keywords: ["Leadership", "Communication", "Team alignment"],
     visual: "people-visual",
     connections: ["brand", "growth"],
@@ -39,7 +39,7 @@ const nodes = [
     eyebrow: "SEEING WHAT IS OVERLOOKED",
     title: "The answer often lives in the gaps.",
     description:
-      "She looks beyond the obvious to identify confusion, missing connections and the unspoken story behind a business problem.",
+      "I look beyond the obvious to identify confusion, missing connections and the unspoken story behind a business problem.",
     keywords: ["Problem solving", "Clarity", "Perspective"],
     visual: "ideas-visual",
     connections: ["brand", "growth"],
@@ -52,7 +52,7 @@ const nodes = [
     eyebrow: "FROM INSIGHT TO ACTION",
     title: "Make the bigger picture actionable.",
     description:
-      "Sonia brings market and product insights together with practical strategies that support engagement, visibility and customer acquisition.",
+      "I bring market and product insights together with practical strategies that support engagement, visibility and customer acquisition.",
     keywords: ["Strategy", "Execution", "Business growth"],
     visual: "growth-visual",
     connections: ["people", "ideas"],
@@ -121,7 +121,9 @@ function Hero() {
           transition={{ duration: 0.7 }}
         >
           <span className="eyebrow-line" />
-          A DIFFERENT WAY OF SEEING
+          <span className="hero-name">SONIA S.</span>
+          <span className="eyebrow-divider">·</span>
+          FOUNDER & CEO · i-SMOKESTACK
           <span className="eyebrow-number">/ 001</span>
         </motion.div>
 
@@ -143,16 +145,14 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <p>
-            The gaps. The confusion.
-            <br />
-            The connections waiting to be made.
+            Building something meaningful starts with seeing what others miss.
           </p>
 
           <button
             className="explore-button"
             onClick={scrollToAbout}
           >
-            <span>ENTER THE PERSPECTIVE</span>
+            <span>EXPLORE MY EXPERTISE</span>
             <ArrowUpRight size={17} />
           </button>
         </motion.div>

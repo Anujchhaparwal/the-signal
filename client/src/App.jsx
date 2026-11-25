@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
+import Perspective from "./sections/Perspective";
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <main>
         <Hero />
 
-        <section id="about" className="placeholder-section">
-          <h2>02 — The Perspective</h2>
-        </section>
+        <Perspective />
 
         <section id="journey" className="placeholder-section">
           <h2>03 — The Journey</h2>

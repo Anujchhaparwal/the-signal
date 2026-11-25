@@ -12,6 +12,8 @@ const chapters = [
 
 function Navbar() {
   const [activeChapter, setActiveChapter] = useState("home");
+  const isLightSection =
+    activeChapter === "journey" || activeChapter === "contact";
 
   useEffect(() => {
     const sections = chapters
@@ -51,7 +53,7 @@ function Navbar() {
   return (
     <>
       <motion.header
-        className="signal-header"
+        className={`signal-header ${isLightSection ? "on-light" : ""}`}
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -71,7 +73,7 @@ function Navbar() {
       </motion.header>
 
       <motion.nav
-        className="chapter-rail"
+        className={`chapter-rail ${isLightSection ? "on-light" : ""}`}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -85,9 +87,8 @@ function Navbar() {
           return (
             <button
               key={chapter.id}
-              className={`chapter-link ${
-                isActive ? "active" : ""
-              }`}
+              className={`chapter-link ${isActive ? "active" : ""
+                }`}
               onClick={() => scrollTo(chapter.id)}
               aria-label={`Go to ${chapter.label}`}
               aria-current={isActive ? "location" : undefined}

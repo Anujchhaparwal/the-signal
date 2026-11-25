@@ -112,6 +112,37 @@
   transform: scale(1.5);
 }
 
+/* NAVIGATION ON LIGHT SECTIONS */
+
+.signal-header.on-light .signal-wordmark {
+  color: #14222C;
+}
+
+.signal-header.on-light .header-status {
+  color: #526777;
+}
+
+.chapter-rail.on-light .rail-label {
+  color: #526777;
+}
+
+.chapter-rail.on-light .chapter-link {
+  color: #526777;
+}
+
+.chapter-rail.on-light .chapter-link i {
+  background: #718493;
+}
+
+.chapter-rail.on-light .chapter-link.active {
+  color: #14222C;
+}
+
+.chapter-rail.on-light .chapter-link.active i {
+  background: #55E6B0;
+  box-shadow: 0 0 12px #55E6B0;
+}
+
 /* MOBILE NAVBAR */
 
 @media (max-width: 680px) {

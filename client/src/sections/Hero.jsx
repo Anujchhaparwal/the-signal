@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { ArrowDown, ArrowUpRight, X } from "lucide-react";
+import "./Hero.css";
 
 
 const nodes = [
@@ -266,9 +267,6 @@ function Hero() {
             </motion.button>
           );
         })}
-
-        {/* NODE INFORMATION PANEL */}
-
 
         {/* EDITORIAL STORY PANEL */}
 

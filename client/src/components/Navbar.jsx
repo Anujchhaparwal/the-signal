@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import "./Navbar.css";
 
 const chapters = [
   { number: "01", label: "Signal", id: "home" },

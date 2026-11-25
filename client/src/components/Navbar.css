@@ -1,0 +1,144 @@
+/* FLOATING IDENTITY */
+
+.signal-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.signal-wordmark {
+  pointer-events: auto;
+  border: 0;
+  background: none;
+  color: #F1F0E9;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.signal-wordmark span {
+  color: #55E6B0;
+  font-size: 9px;
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8396A5;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #55E6B0;
+  box-shadow: 0 0 12px #55E6B0;
+}
+
+/* CHAPTER RAIL */
+
+.chapter-rail {
+  position: fixed;
+  z-index: 100;
+  right: 3.2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.rail-label {
+  writing-mode: vertical-rl;
+  color: #687C8C;
+  font-size: 8px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.chapter-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 0;
+  background: none;
+  color: #718493;
+  font-size: 9px;
+  transition: color 0.3s ease;
+}
+
+.chapter-link.active {
+  color: #55E6B0;
+}
+
+.chapter-link.active i {
+  width: 7px;
+  height: 7px;
+  background: #55E6B0;
+  box-shadow: 0 0 12px #55E6B0;
+}
+
+.chapter-link i {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #536777;
+  transition: all 0.3s ease;
+}
+
+.chapter-link:hover {
+  color: #55E6B0;
+}
+
+.chapter-link:hover i {
+  background: #55E6B0;
+  box-shadow: 0 0 10px #55E6B0;
+  transform: scale(1.5);
+}
+
+/* MOBILE NAVBAR */
+
+@media (max-width: 680px) {
+  .signal-header {
+    height: 70px;
+    padding: 0 6%;
+  }
+
+  .header-status {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .chapter-rail {
+    right: 5%;
+    top: auto;
+    bottom: 25px;
+    transform: none;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .rail-label {
+    display: none;
+  }
+
+  .chapter-link span {
+    display: none;
+  }
+}

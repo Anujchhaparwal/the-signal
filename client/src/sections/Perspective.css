@@ -1,4 +1,3 @@
-
 /* PAGE 02 — THE PERSPECTIVE */
 
 .perspective-section {
@@ -98,5 +97,12 @@
   .brain-experience {
     min-height: 350px;
     margin: 30px auto 15px;
+  }
+}
+
+/* PORTRAIT TABLET */
+@media (min-width: 681px) and (max-width: 1000px) and (min-height: 1000px) {
+  .perspective-section {
+    min-height: auto;
   }
 }

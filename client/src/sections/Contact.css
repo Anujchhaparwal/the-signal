@@ -107,3 +107,15 @@
     text-align: center;
   }
 }
+
+/* PORTRAIT TABLET */
+@media (min-width: 681px) and (max-width: 1000px) and (min-height: 1000px) {
+  .contact-section {
+    min-height: auto;
+    padding: 80px 7%;
+  }
+
+  .contact-links {
+    margin: 55px 0 65px;
+  }
+}

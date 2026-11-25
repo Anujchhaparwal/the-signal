@@ -351,6 +351,15 @@
   }
 }
 
+/* PORTRAIT TABLET */
+@media (min-width: 681px) and (max-width: 1000px) and (min-height: 1000px) {
+  .signal-hero {
+    min-height: 820px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+}
+
 /* MOBILE */
 
 @media (max-width: 680px) {

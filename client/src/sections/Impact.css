@@ -1,0 +1,194 @@
+/* IMPACT SECTION */
+
+.impact-section {
+  position: relative;
+  padding: 110px 0 100px;
+  background: #080B12;
+  overflow: hidden;
+}
+
+.impact-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.impact-heading {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.impact-heading h2 {
+  margin: 20px 0;
+}
+
+.impact-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #B8C4CE;
+  line-height: 1.7;
+}
+
+.impact-heading h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  max-width: 1100px;
+  margin: 20px auto;
+  font-size: clamp(2.3rem, 3.8vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+}
+
+.impact-heading h2 em {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #55E6B0;
+}
+
+@media (max-width: 768px) {
+  .impact-heading h2 {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-container {
+    padding: 0 20px;
+  }
+
+  .impact-section {
+    padding: 80px 0;
+  }
+}
+
+/* FEATURED AWARD CARDS */
+
+.featured-awards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.award-card {
+  min-height: 270px;
+  padding: 25px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: rgba(9, 21, 34, 0.55);
+  border: 1px solid rgba(85, 230, 176, 0.16);
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(85, 230, 176, 0.55);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.award-card-content {
+  align-self: start;
+  padding-top: 26px;
+}
+
+.award-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.award-year {
+  color: #55E6B0;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.award-icon {
+  color: #55E6B0;
+  flex-shrink: 0;
+}
+
+.award-card-content h3 {
+  color: #F1F0E9;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.award-card-content p {
+  color: #B8C4CE;
+  font-size: 0.88rem;
+}
+
+.award-description {
+  display: block;
+  margin-top: 14px;
+  color: #8EA2B2;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.award-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(241, 240, 233, 0.12);
+  color: #8EA2B2;
+  font-size: 0.65rem;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 1000px) {
+  .featured-awards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-awards {
+    grid-template-columns: 1fr;
+  }
+
+  .award-card {
+    min-height: 220px;
+  }
+}
+
+/* IMPACT REFLECTION */
+
+.impact-reflection {
+  max-width: 900px;
+  margin: 75px auto 0;
+  text-align: center;
+}
+
+.impact-reflection p {
+  color: #B8C4CE;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.impact-reflection p span {
+  color: #55E6B0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .impact-reflection {
+    margin-top: 50px;
+  }
+
+  .impact-reflection p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}

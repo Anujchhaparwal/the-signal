@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Perspective from "./sections/Perspective";
 import Journey from "./sections/Journey";
+import Impact from "./sections/Impact";
 
 
 function App() {
@@ -16,9 +17,7 @@ function App() {
 
         <Journey />
 
-        <section id="impact" className="placeholder-section">
-          <h2>04 — The Philosophy</h2>
-        </section>
+        <Impact />
 
         <section id="contact" className="placeholder-section">
           <h2>05 — The Connection</h2>

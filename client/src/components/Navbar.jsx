@@ -12,8 +12,7 @@ const chapters = [
 
 function Navbar() {
   const [activeChapter, setActiveChapter] = useState("home");
-  const isLightSection =
-    activeChapter === "journey" || activeChapter === "contact";
+  const isLightSection = false;
 
   useEffect(() => {
     const sections = chapters

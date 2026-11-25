@@ -143,6 +143,16 @@
   box-shadow: 0 0 12px #55E6B0;
 }
 
+/* NAVIGATION ON DARK SECTIONS */
+
+.signal-header:not(.on-light) .signal-wordmark {
+  color: #F1F0E9;
+}
+
+.signal-header:not(.on-light) .header-status {
+  color: #8EA2B2;
+}
+
 /* MOBILE NAVBAR */
 
 @media (max-width: 680px) {
